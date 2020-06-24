@@ -1,4 +1,4 @@
-import { Component} from '@angular/core';
+import { Component , Input} from '@angular/core';
 
 @Component ({
 selector:'custom-hello',
@@ -7,10 +7,9 @@ styleUrls:['./hello.component.css']
 })
 
 export class HelloComponent{
-    public name:string=null;
+    @Input() name:string;
 
     constructor(){
-        this.name='Abraham';
     }
 
 }
