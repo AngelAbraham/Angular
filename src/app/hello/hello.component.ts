@@ -7,5 +7,10 @@ styleUrls:['./hello.component.css']
 })
 
 export class HelloComponent{
+    public name:string=null;
+
+    constructor(){
+        this.name='Abraham';
+    }
 
 }
