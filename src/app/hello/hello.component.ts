@@ -2,7 +2,8 @@ import { Component} from '@angular/core';
 
 @Component ({
 selector:'custom-hello',
-template:`<p>Hello Angular v.9 </p>`
+templateUrl:'./hello.component.html',
+styleUrls:['./hello.component.css']
 })
 
 export class HelloComponent{
