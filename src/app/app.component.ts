@@ -7,5 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   public myName:string="Abraham";
+
+  onSayHello(message){
+    console.log(message);
+  }
+  
   title = 'my-app';
 }
