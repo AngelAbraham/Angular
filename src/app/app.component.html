@@ -1,8 +1,10 @@
 <div style="text-align: center;">
 <h1>
   Bienvenido a angular prro :v
-  <custom-hello [name]="myName" (sayHello)="onSayHello($event)"></custom-hello>
 </h1>
+<div [class.hidden]="">Writting '{{myHelloComponent.inputName}}' in HelloComponent</div>
+  <custom-hello #myHelloComponent [name]="myName" (sayHello)="onSayHello($event)"></custom-hello>
+
 </div>
 
 <!--Prueba con componente nuevo-->
